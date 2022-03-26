@@ -29,21 +29,22 @@ public abstract class MusicalInstrument {
 
     public void setName(String name) {
         this.name = name;
+        System.out.println("В данный момент используется инструмент: " + this.name);
     }
 
     public void setColor() {
         String[] randomColor = new String[]{"Зелёный", "Чёрный", "Белый", "Красный"};
         Random random = new Random();
         this.color = randomColor[random.nextInt(randomColor.length)];
-        System.out.println("Случайным образом изменен цвет инструмента на: " + this.color);
+        System.out.println("Случайным образом изменен цвет инструмента '" + this.name + "' на: " + this.color);
     }
 
     public void setVolume(int volume) {
 
         if (this.volume < volume) {
-            System.out.println("Громкость инструмента увеличина.");
+            System.out.println("Громкость иснтрумента '" + this.name + "' увеличина.");
         } else {
-            System.out.println("Громкость инструмента уменьшена.");
+            System.out.println("Громкость инструмента '" + this.name + "' уменьшена.");
         }
 
         this.volume = volume;
@@ -51,7 +52,7 @@ public abstract class MusicalInstrument {
 
     public void setCustom(String custom) {
         this.custom = custom;
-        System.out.println("На инструмент нанесена наклейка: " + this.custom);
+        System.out.println("На иснтрумент '" + this.name + "' нанесена наклейка: " + this.custom);
     }
 
 }

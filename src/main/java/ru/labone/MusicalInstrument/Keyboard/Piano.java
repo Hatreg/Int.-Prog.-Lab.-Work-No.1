@@ -2,6 +2,13 @@ package ru.labone.MusicalInstrument.Keyboard;
 
 public final class Piano extends Keyboard {
 
+    public Piano(String custom) {
+        setName("Пианино");
+        setColor();
+        setVolume(0);
+        setCustom(custom);
+    }
+
     @Override
     public void Sound(String sound) {
         System.out.println(sound);
