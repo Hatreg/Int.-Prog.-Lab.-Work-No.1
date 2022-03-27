@@ -1,9 +1,9 @@
 package ru.labone.MusicalInstrument.Keyboard;
 
-public final class Piano extends Keyboard {
+public final class Accordion extends Keyboard {
 
-    public Piano(String custom) {
-        setName("Пианино");
+    public Accordion(String custom) {
+        setName("Аккордеон");
         setColor();
         setVolume(0);
         setCustom(custom);
@@ -34,9 +34,9 @@ public final class Piano extends Keyboard {
     private void play() {
         System.out.println("[Команда]: Сыграть что-нибудь");
         if (this.getVolume() < 1) {
-            this.Sound("тинь-тинь");
+            this.Sound("Вии-ви-ви-ви-виу");
         } else {
-            this.Sound("ТЫНЬ-ТЫНЬ");
+            this.Sound("ВИИ-ВИ-ВИ-ВИ-ВИУ");
         }
     }
 

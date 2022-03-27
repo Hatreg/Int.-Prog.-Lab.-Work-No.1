@@ -1,9 +1,9 @@
-package ru.labone.MusicalInstrument.Keyboard;
+package ru.labone.MusicalInstrument.Stringed;
 
-public final class Piano extends Keyboard {
+public final class Cello extends Stringed {
 
-    public Piano(String custom) {
-        setName("Пианино");
+    public Cello(String custom) {
+        setName("Виолончель");
         setColor();
         setVolume(0);
         setCustom(custom);
@@ -34,9 +34,9 @@ public final class Piano extends Keyboard {
     private void play() {
         System.out.println("[Команда]: Сыграть что-нибудь");
         if (this.getVolume() < 1) {
-            this.Sound("тинь-тинь");
+            this.Sound("Вииии-иии");
         } else {
-            this.Sound("ТЫНЬ-ТЫНЬ");
+            this.Sound("ВИИИИ-ИИИ");
         }
     }
 

@@ -6,7 +6,6 @@ public abstract class Keyboard extends MusicalInstrument {
 
     @Override
     public void Sound() {
-        System.out.println("Тыннь-тыннь");
     }
 
     public abstract void Sound(String sound);

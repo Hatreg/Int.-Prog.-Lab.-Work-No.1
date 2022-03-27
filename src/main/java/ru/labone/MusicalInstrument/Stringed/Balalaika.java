@@ -1,9 +1,9 @@
-package ru.labone.MusicalInstrument.Keyboard;
+package ru.labone.MusicalInstrument.Stringed;
 
-public final class Piano extends Keyboard {
+public final class Balalaika extends Stringed {
 
-    public Piano(String custom) {
-        setName("Пианино");
+    public Balalaika(String custom) {
+        setName("Балалайка");
         setColor();
         setVolume(0);
         setCustom(custom);
@@ -34,9 +34,9 @@ public final class Piano extends Keyboard {
     private void play() {
         System.out.println("[Команда]: Сыграть что-нибудь");
         if (this.getVolume() < 1) {
-            this.Sound("тинь-тинь");
+            this.Sound("тринь-тринь");
         } else {
-            this.Sound("ТЫНЬ-ТЫНЬ");
+            this.Sound("ТРИНЬ-ТРИНЬ");
         }
     }
 
